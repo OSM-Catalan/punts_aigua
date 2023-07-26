@@ -59,7 +59,7 @@ st_write(a, "~/punts_aigua_def.json", driver = "GeoJSON")
 
 #### jsons parcs ####
 
-
+# descarregar capa parcs de Catalunya
 parcs <- opq("Catalunya") |> 
   add_osm_feature("boundary", "protected_area") |> 
   osmdata_sf()
@@ -69,15 +69,12 @@ parcs$osm_polygons
 
 
 parcs_capa <- rbind(parcs$osm_multipolygons[,c("name", "geometry")], parcs$osm_polygons[,c("name", "geometry")])
-
+# validar i fer intersecció
 parcs_capa <- st_make_valid(parcs_capa)
 a <- st_make_valid(a)
 a_parcs <- st_intersection(a, parcs_capa)
 colnames(a_parcs)[colnames(a_parcs)=="name"] <- "park"
-save_filtered <- function(layer, subset){
-  filtered <- layer[layer$park == subset,-10]
-  return(filtered)
-}
+# separar i guardar
 a_parcs_split <- split(a_parcs, a_parcs$park)
 
 
