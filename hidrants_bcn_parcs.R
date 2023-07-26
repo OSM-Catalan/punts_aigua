@@ -52,7 +52,7 @@ a$`pillar:type` <- dplyr::case_when(a$hidrant_tipus == "columna seca" ~ "dry_bar
                                                TRUE ~ NA_character_)
 
 a <- st_transform(a[, c("ref", "emergency", "man_made", "natural", "content",
-                        "water", "leisure", "fire_hydrant:type", "pillar:type", "image", "image:0")], 4326) # definitiu i guardar
+                        "water", "leisure", "fire_hydrant:type", "pillar:type", "image", "image:0", "description:ca")], 4326) # definitiu i guardar
 
 st_write(a, "~/punts_aigua_def.json", driver = "GeoJSON")
 
@@ -78,8 +78,11 @@ save_filtered <- function(layer, subset){
   filtered <- layer[layer$park == subset,-10]
   return(filtered)
 }
-a_parcs_split <- split(a_parcs, a_parcs$park)
 
+colnames(a_parcs) <- sapply(colnames(a_parcs), \(x) gsub("\\.", ":", x), USE.NAMES = FALSE)
+colnames(a_parcs)[colnames(a_parcs) == "name"] <- "park"
+
+a_parcs_split <- split(a_parcs, a_parcs$park)
 
 allNames <- names(a_parcs_split)
 for(thisName in allNames){
