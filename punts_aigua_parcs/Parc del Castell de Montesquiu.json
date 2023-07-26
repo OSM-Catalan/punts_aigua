@@ -1,0 +1,13 @@
+{
+"type": "FeatureCollection",
+"name": "Parc del Castell de Montesquiu",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "ref": "08131-2", "emergency": "fire_hydrant", "man_made": null, "natural": null, "content": null, "water": null, "leisure": null, "fire_hydrant.type": "pillar", "pillar.type": "dry_barrel", "park": "Parc del Castell de Montesquiu" }, "geometry": { "type": "Point", "coordinates": [ 2.2142819, 42.1141916 ] } },
+{ "type": "Feature", "properties": { "ref": "08131-3", "emergency": "fire_water_pond", "man_made": "storage_tank", "natural": null, "content": "water", "water": "pond", "leisure": null, "fire_hydrant.type": null, "pillar.type": null, "park": "Parc del Castell de Montesquiu" }, "geometry": { "type": "Point", "coordinates": [ 2.21757, 42.115633 ] } },
+{ "type": "Feature", "properties": { "ref": "08131-4", "emergency": "fire_hydrant", "man_made": null, "natural": null, "content": null, "water": null, "leisure": null, "fire_hydrant.type": "pillar", "pillar.type": "dry_barrel", "park": "Parc del Castell de Montesquiu" }, "geometry": { "type": "Point", "coordinates": [ 2.2098063, 42.1205787 ] } },
+{ "type": "Feature", "properties": { "ref": "08131-5", "emergency": "fire_hydrant", "man_made": null, "natural": null, "content": null, "water": null, "leisure": null, "fire_hydrant.type": "pillar", "pillar.type": "dry_barrel", "park": "Parc del Castell de Montesquiu" }, "geometry": { "type": "Point", "coordinates": [ 2.2142925, 42.1216153 ] } },
+{ "type": "Feature", "properties": { "ref": "08131-6", "emergency": "fire_hydrant", "man_made": null, "natural": null, "content": null, "water": null, "leisure": null, "fire_hydrant.type": "pillar", "pillar.type": "dry_barrel", "park": "Parc del Castell de Montesquiu" }, "geometry": { "type": "Point", "coordinates": [ 2.2165123, 42.1204763 ] } },
+{ "type": "Feature", "properties": { "ref": "08131-7", "emergency": "fire_hydrant", "man_made": null, "natural": null, "content": null, "water": null, "leisure": null, "fire_hydrant.type": "pillar", "pillar.type": "dry_barrel", "park": "Parc del Castell de Montesquiu" }, "geometry": { "type": "Point", "coordinates": [ 2.195282, 42.1202677 ] } }
+]
+}
