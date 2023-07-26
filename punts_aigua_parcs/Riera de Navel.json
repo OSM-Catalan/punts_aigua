@@ -3,7 +3,7 @@
 "name": "Riera de Navel",
 "crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
 "features": [
-{ "type": "Feature", "properties": { "ref": "08308-4", "emergency": "water_tank", "man_made": null, "natural": null, "content": null, "water": null, "leisure": null, "fire_hydrant.type": null, "pillar.type": null, "image": null, "image.0": null, "park": "Riera de Navel" }, "geometry": { "type": "Point", "coordinates": [ 1.7554415, 41.963433099999982 ] } },
-{ "type": "Feature", "properties": { "ref": "08132-18", "emergency": "fire_hydrant", "man_made": null, "natural": null, "content": null, "water": null, "leisure": null, "fire_hydrant.type": "underground", "pillar.type": null, "image": "https://incendis.diba.cat/ppi/uploads/fotos/a2020/A02153_2016.1.11_08132-16-4477.jpg", "image.0": "https://incendis.diba.cat/ppi/uploads/fotos/a2020/A02153_2016.1.11_08132-16-7236.jpg", "park": "Riera de Navel" }, "geometry": { "type": "Point", "coordinates": [ 1.7481156, 41.9660138 ] } }
+{ "type": "Feature", "properties": { "ref": "08308-4", "emergency": "water_tank", "man_made": null, "natural": null, "content": null, "water": null, "leisure": null, "fire_hydrant:type": null, "pillar:type": null, "image": null, "image:0": null, "park": "Riera de Navel" }, "geometry": { "type": "Point", "coordinates": [ 1.7554415, 41.963433099999982 ] } },
+{ "type": "Feature", "properties": { "ref": "08132-18", "emergency": "fire_hydrant", "man_made": null, "natural": null, "content": null, "water": null, "leisure": null, "fire_hydrant:type": "underground", "pillar:type": null, "image": "https://incendis.diba.cat/ppi/uploads/fotos/a2020/A02153_2016.1.11_08132-16-4477.jpg", "image:0": "https://incendis.diba.cat/ppi/uploads/fotos/a2020/A02153_2016.1.11_08132-16-7236.jpg", "park": "Riera de Navel" }, "geometry": { "type": "Point", "coordinates": [ 1.7481156, 41.9660138 ] } }
 ]
 }
